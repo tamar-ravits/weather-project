@@ -28,6 +28,13 @@
   color: #61dafb;
 }
 
+#form1 {
+  border: 1px solid #282c34;
+}
+
+.form-outline{
+  width: 30vw;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +42,85 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.card {
+    background-color: #e15f75;
+    max-width: 16%;
+    margin-right: 1%;
+    height: 80%
+}
+
+.wrap-cards {
+  height: 50%
+}
+
+.font-text {
+  font-family: cursive;
+}
+
+.wrap-title {
+  height: 20%
+}
+
+.wrap-icon {
+  margin-right: 15px
+}
+
+.wrap-favorite-details-weather {
+  width: fit-content;
+  margin: 5%
+}
+
+.wrap-details {
+  height: 30%
+}
+
+.wrapper-details-weather {
+  width: 80%;
+  height: 95%;
+  border: 1px solid gray
+}
+
+.header {
+  height: 10vh;
+  border-bottom: 1px solid black;
+}
+
+.title-position {
+  font-size: 20px;
+  width: fit-content
+}
+
+.links-position {
+  width: fit-content
+}
+
+.content {
+  height: 90vh
+}
+
+.link-home {
+   margin-right: 10px;
+}
+
+.link-focus{
+  color: #fff;
+  background-color: #e15f75;
+}
+
+.wrap-search {
+  height: 15%
+}
+
+.content-details-weather {
+  height: 85%
+}
+
+.row-favorite {
+  height: 40vh
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
