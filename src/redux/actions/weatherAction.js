@@ -52,7 +52,7 @@ export const getCurrentWeather = function (locationKey, currentCity, apiKey) {
                 if (res.ok) {
                     return res.json()
                 }
-                dispatch({ isOpen: true, title: 'failed To retrieve data...' })
+                dispatch(openErrorModal({ isOpen: true, title: 'failed To retrieve data...' }))
             }).catch(err => {
                 dispatch(openErrorModal({ isOpen: true, title: 'error with apiKey , pls replace apiKey...', disabled: true }));
             })
@@ -62,7 +62,7 @@ export const getCurrentWeather = function (locationKey, currentCity, apiKey) {
                 if (res.ok) {
                     return res.json()
                 }
-                dispatch({ isOpen: true, title: 'failed To retrieve data...' })
+                dispatch(openErrorModal({ isOpen: true, title: 'failed To retrieve data...' }))
             })
             .catch(err => {
                 dispatch(openErrorModal({ isOpen: true, title: 'error with apiKey , pls replace apiKey...', disabled: true }));
@@ -89,7 +89,7 @@ export const getLocationIdByName = function (apiKey, city) {
                 if (res.ok) {
                     return res.json()
                 }
-                dispatch({ isOpen: true, title: 'failed To retrieve data...' })
+                dispatch(openErrorModal({ isOpen: true, title: 'failed To retrieve data...' }))
             }).catch((err) => {
                 dispatch(openErrorModal({ isOpen: true, title: 'error with apiKey , pls replace apiKey...', disabled: true }));
             })
